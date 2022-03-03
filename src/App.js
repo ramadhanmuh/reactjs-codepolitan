@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-
-import Home from './components/Home/Home';
+import Home from './pages/Home';
+import Premium from './pages/Premium';
 
 class App extends Component {
   render() {
@@ -28,7 +28,7 @@ class App extends Component {
           </nav>
           <Routes>
             <Route path='/' exact element={<Home />}></Route>
-            <Route path='/premium' element={() => <h4>Premium</h4>}></Route>
+            <Route path='/premium' element={<Premium />}></Route>
             <Route path='/devschool' element={() => <h4>DevSchool</h4>}></Route>
           </Routes>
         </div>
