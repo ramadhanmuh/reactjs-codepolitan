@@ -4,6 +4,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Premium from './pages/Premium';
+import DevSchool from './pages/DevSchool';
 
 class App extends Component {
   render() {
@@ -29,7 +30,7 @@ class App extends Component {
           <Routes>
             <Route path='/' exact element={<Home />}></Route>
             <Route path='/premium' element={<Premium />}></Route>
-            <Route path='/devschool' element={() => <h4>DevSchool</h4>}></Route>
+            <Route path='/devschool' element={<DevSchool />}></Route>
           </Routes>
         </div>
       </Router>
